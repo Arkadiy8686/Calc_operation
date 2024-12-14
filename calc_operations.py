@@ -40,3 +40,7 @@ def square_root(a):
         raise ValueError("Cannot take square root of a negative number")
     return a.sqrt()
 
+def sine(a):
+    a = validate_decimal(a)  # Валидация
+    return round(math.sin(math.radians(a)), 15)
+
