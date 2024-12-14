@@ -7,3 +7,9 @@ def addition(a, b):
     b = validate_decimal(b)  # Валидация входных данных
     return a + b
 
+def subtraction(a, b):
+    a = validate_decimal(a)
+    b = validate_decimal(b)
+    return a - b
+
+
