@@ -44,3 +44,7 @@ def sine(a):
     a = validate_decimal(a)  # Валидация
     return round(math.sin(math.radians(a)), 15)
 
+def cosine(a):
+    a = validate_decimal(a)  # Валидация
+    return round(math.cos(math.radians(a)), 15)
+
