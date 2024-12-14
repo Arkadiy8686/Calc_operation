@@ -73,4 +73,16 @@ class Memory:
         self.memory += value
         self.history.append(value)
 
-   
+    def m_subtract(self, value):
+        """Вычесть значение из памяти."""
+        value = validate_decimal(value)
+        self.memory -= value
+        self.history.append(-value)
+
+    def m_multiply(self, value):
+        """Умножить значение в памяти."""
+        value = validate_decimal(value)
+        self.memory *= value
+        self.history.append(f"*{value}")
+
+    
