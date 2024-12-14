@@ -12,4 +12,9 @@ def subtraction(a, b):
     b = validate_decimal(b)
     return a - b
 
+def multiplication(a, b):
+    a = validate_decimal(a)
+    b = validate_decimal(b)
+    return a * b
+
 
