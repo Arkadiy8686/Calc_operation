@@ -85,4 +85,25 @@ class Memory:
         self.memory *= value
         self.history.append(f"*{value}")
 
+    def m_divide(self, value):
+        """Разделить значение в памяти."""
+        value = validate_decimal(value)
+        if value == 0:
+            raise ValueError("Cannot divide by zero in memory")
+        self.memory /= value
+        self.history.append(f"/{value}")
+
+    def m_clear(self):
+        """Очистить память."""
+        self.memory = Decimal(0)
+        self.history.clear()
+
+    def m_recall(self):
+        """Возвращает текущее значение из памяти."""
+        return self.memory
+
+    def get_history(self):
+        """Получить историю операций с памятью."""
+        return self.history
+
     
